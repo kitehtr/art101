@@ -1,9 +1,35 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+p {
+  text-indent: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+h1 {
+  color: blueviolet;
+  text-indent: 20px;
+  font-size: 300%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+#content{
+  border: dotted 10px blueviolet;
+  background-color:turquoise;
+  padding: 10px;
+  font-size: 15px;
+  margin:10px;
+  justify-content: center;
+}
+
+img {
+  width: 500px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

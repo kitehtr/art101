@@ -1,36 +1,52 @@
-/* we can use a single css file to style all the files in our wwebsite */
 
-/* you can pick your own background colors, text colors, and fonts */
+.cat-photo {
+  margin: 10px;
+  max-width: 300px;
+  display: inline;
+  float:right;
+  clear: right;
+}
 
-/* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color:#ADD8E6;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: sans-serif;
+
+h1,h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: blueviolet;
+  text-indent: 20px;
+  font-size: 300%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-/* and we can have rules that overlap other rules, both take effect */
+h2 {
+  text-indent: 50px;
+}
+
+
 h1 {
   letter-spacing: 5px;
   word-spacing: 5px;
   font-size: 200%;
 }
 
-/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {
-  margin: 10px;
+  border: dotted 10px blueviolet;
+  background-color:#ADD8E6;
   padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+  font-size: 15px;
+  margin:10px;
+  justify-content: center;
 }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;
-  background-color: #A3C9A8;
+  background-color: #eccfcf;
+  overflow: hidden;
 }

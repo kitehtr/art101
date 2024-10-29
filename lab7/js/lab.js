@@ -12,7 +12,7 @@ function sortUserName(userName) {
 
 // Task X: Bonus 1: sort lower case and Uppercase
 function sortUserNamePreserveCase(userName) {
-    return userName.split(" ").map(word => word.split("").sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).join("")) .join(" "); 
+    return userName.split("").sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).join("");
 }
 
 //Task X: Bonus 2: Ignore spaces

@@ -17,11 +17,9 @@ function sortUserNamePreserveCase(userName) {
 
 //Task X: Bonus 2: Ignore spaces
 function sortUserNameAllowSpaces(userName) {
-    return userName.split("").sort((a, b) => {
-        if (a === " " || b === " ") return 0; 
-        return a.toLowerCase().localeCompare(b.toLowerCase());
-    }).join("");
+    return userName.split(" ") .map(word => word.split("").sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase())).join("")).join(" "); 
 }
+
 
 //Task X: Bonus 3: shuffle the user's name to create an Anagram with Capitalization
 function shuffleUserNameAnagram(userName) {

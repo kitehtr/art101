@@ -24,3 +24,6 @@ var mapResults = array.map(function(x) {
 })
 
 console.log("Square of array: ", mapResults);
+
+// Use jQuery to select the element by its ID and set the HTML content
+$("#output").html(mapResults);

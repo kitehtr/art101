@@ -28,8 +28,8 @@
   background-color: lightgreen;
   text-align: left; 
   float: right;
-  border-radius: 15px 15px 0 15px; /* Rounded corners with a tail on the right */
-  margin-left: 10px; /* Space between bubble and left edge */
+  border-radius: 15px 15px 0 15px; 
+  margin-left: 10px; 
   clear: both;
 }
 

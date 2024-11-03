@@ -52,3 +52,26 @@ h1 {
   overflow: hidden;
 }
 
+#challenge {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+#problems {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+#results {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}

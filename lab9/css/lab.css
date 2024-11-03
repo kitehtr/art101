@@ -50,3 +50,43 @@
 body{
   background-image: url('../img/psy-wall.png');
 }
+
+#challenge {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+#problems {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+#results {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+#reflection {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid 1px #888;
+  background-color: #eccfcf;
+  overflow: hidden;
+}
+
+.special {
+  background-color: rgb(26, 26, 146);
+  border: solid 5px red;
+  color: pink;
+  font-weight: bold;
+  font-size: 32px; 
+}

@@ -5,36 +5,9 @@
     Date: 11/2/24
 */
 
-// Use jQuery to select the element by its ID and set the HTML content
-// add button to challenge section
-$("#challenge").append("<button id='button-challenge'>Make Special</button>")
-// add a click listener to the challenge button
-$("#button-challenge").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#challenge").toggleClass("special");
+// Add a button to each section with the class "special-section"
+$(".special-section").append("<button class='button-special'>Make Special</button>");
+// Attach a click listener to each button that toggles the "special" class on its parent section
+$(".button-special").click(function() {
+    $(this).parent().toggleClass("special");
 });
-
-// add button to problems section
-$("#problems").append("<button id='button-problems'>Make Special</button>")
-// add a click listener to the challenge button
-$("#button-problems").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#problems").toggleClass("special");
-});
-
-// add button to Reflection section
-$("#reflection").append("<button id='button-reflection'>Make Special</button>")
-// add a click listener to the challenge button
-$("#button-reflection").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#reflection").toggleClass("special");
-});
-
-// add button to problems section
-$("#results").append("<button id='button-results'>Make Special</button>")
-// add a click listener to the challenge button
-$("#button-results").click(function(){
-    // now add (or subtract) the "special" class to the section
-    $("#results").toggleClass("special");
-});
-

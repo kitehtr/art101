@@ -1,0 +1,25 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+/* Common styling for both message bubbles */
+
+/* Left-aligned messages for auto-generated message */
+.text {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-right: 5px; 
+  display: inline-block; 
+}
+
+/* Clear floats after each message to maintain the layout */
+#output:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+

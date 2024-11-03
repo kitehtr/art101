@@ -1,34 +1,24 @@
-// lab.js - Lab 8: Anon Functions and Callbacks
-// Author: Keith Tran & Josh Chow
-// Date: 10/30/24
+/*
+    lab.js - Lab 10: JavaScript for the Web
+    Requirements: jQuery must be loaded for this script to work.
+    Authors: Keith Tran & Josh Chow
+    Date: 11/2/24
+*/
 
-array = [1,10,2300203,20,420,21,23,27];
-
-function addTwoNums (x) {
-    var results = x + x;
-    return results;
+function generateRandomText() {
+    const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+    const min = 3;
+    const max = 100;
+    const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+    // Get a random starting index to slice the Lorem Ipsum text
+    const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+    return text.slice(randStart, randStart + randLen);
 }
 
-// test function
-console.log("What is 10 + 10? ", addTwoNums(10));
-console.log("What is 420 + 420? ", addTwoNums(420));
-console.log("What is 21 + 21? ", addTwoNums(21));
-
-console.log("My array", array);
-
-var result = array.map(addTwoNums);
-console.log("Double every element in the array: ", result);
-
-var mapResults = array.map(function(x) {
-    return x * x;
-})
-
-console.log("Square of array: ", mapResults);
-
-// Use jQuery to select the element by its ID and set the HTML content
-$("#output").html("Original Array: [" + array.join(", ") + "]<br><br>");
-$("#output").append("Squaring of each element in the array: [" + mapResults.join(", ") + "]<br><br>");
-$("#output").append("Double of each element in the array: [" + result.join(", ") + "]<br><br>");
-
-
-
+// click listener for button
+$("#make-convo").click(function() {
+    // get new fake dialogue
+    const newText = generateRandomText();
+    // append a new div to our output div with the new text
+    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+});

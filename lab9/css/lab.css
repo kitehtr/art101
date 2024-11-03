@@ -1,0 +1,52 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+
+#badge {
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px; 
+  text-align: center;
+  float: right; 
+}
+
+.badge-background {
+  background-color: #fd2424;
+  padding: 10px 0;
+}
+
+.badge-header {
+  font-family: Arial, sans-serif; 
+  font-size: 36px; 
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 0;
+  line-height: 1; 
+}
+
+.badge-header p {
+  font-size: 40px; 
+  color: white;
+  margin: 0;
+  padding: 5px;
+  line-height: 0.8; 
+}
+
+.badge-name {
+  font-family: 'Times New Roman', serif; 
+  font-size: 32px; 
+  color: black;
+  background-color: white;
+  padding: 25px 0; 
+  margin: 0;
+  line-height: 1.2;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('../img/psy-wall.png');
+}

@@ -35,7 +35,7 @@ var myButton = document.getElementById("button");
 myButton.addEventListener("click", function() {
     var name = document.getElementById("input").value;
     var house = sortingHat(name);
-    newText = `<p class="indent">The Sorting Hat has sorted you into ${house.name}.</p> <p class = "indent"> ${house.description}</p> <br> <p class = 'indent'>Descriptions found at https://www.harrypotter.com/features/hogwarts-house-meanings</p>` ;
+    newText = `<p class="indent">Greetings ${name}. <br><br> The Sorting Hat has sorted you into ${house.name}.</p> <p class = "indent"> ${house.description}</p> <br> <p class = 'indent'>Descriptions found at https://www.harrypotter.com/features/hogwarts-house-meanings</p>` ;
     document.getElementById("output").innerHTML = newText;
 });
 

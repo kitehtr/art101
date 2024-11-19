@@ -34,8 +34,19 @@
                 <p>You are currently looking at the index.html file. Here is the output for FizzBuzzBoom</p>
                 <div id="input-output">
                     <h2> FizzBuzzBoom</h2>
-
-                    <div class = "indent" id="output">
+                    <section id="input-section">
+                        <label for="maxNumber">Where should we stop?</label>
+                        <input type="number" id="maxNumber" placeholder="Enter max number" />
+                        
+                        <h2>What factors should print what?</h2>
+                        <div id="factors"></div>
+                        <button id="addFactorButton">Add Factor</button>
+                        <button id="runButton">Run</button>
+                    </section>
+                    <section id="output-section">
+                        <h2>Output</h2>
+                        <div id="output"></div>
+                    </section>
                     </div>
                 </div>
         </section>

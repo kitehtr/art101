@@ -30,3 +30,37 @@ $(document).ready(function() {
         });
     });
 });
+
+$(document).ready(function() {
+    // Click listener
+    $("#activate2").click(function() {
+        // Using the core $.ajax() method
+        $.ajax({
+            // The URL for the request (from the API docs)
+            url: "https://api.nasa.gov/planetary/apod", 
+            data: {
+                api_key: "e7IO0eF8JXhw3fNSxsUIGzDVuvkujVZIX5LVefCt",
+            },
+            // Whether this is a POST or GET request
+            type: "GET", 
+            // The type of data expected back
+            dataType: "json",
+            // What to do when the API call is successful
+            success: function(data) {
+                // Update the page with all response data
+                $("#output").html(`
+                    <h1>${data.title}</h1>
+                    <p><strong>Date:</strong> ${data.date}</p>
+                    <p>${data.explanation}</p>
+                    <p><strong>Media Type:</strong> ${data.media_type}</p>
+                    <p><strong>Service Version:</strong> ${data.service_version}</p>
+                    <img src="${data.url}" alt="${data.title}" style="max-width: 100%; height: auto;">
+                    <p><a href="${data.hdurl}" target="_blank">View HD Image</a></p>
+                `);
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                console.log("Error:", textStatus, errorThrown);
+            }
+        });
+    });
+});

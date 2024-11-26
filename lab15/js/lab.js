@@ -48,7 +48,7 @@ $(document).ready(function() {
             // What to do when the API call is successful
             success: function(data) {
                 // Update the page with all response data
-                $("#output").html(`
+                $("#output").append(`
                     <h1>${data.title}</h1>
                     <p><strong>Date:</strong> ${data.date}</p>
                     <p>${data.explanation}</p>
@@ -58,6 +58,7 @@ $(document).ready(function() {
                     <p><a href="${data.hdurl}" target="_blank">View HD Image</a></p>
                 `);
             },
+            // What we do if the api call fails
             error: function(jqXHR, textStatus, errorThrown) {
                 console.log("Error:", textStatus, errorThrown);
             }

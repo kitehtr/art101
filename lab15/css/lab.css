@@ -29,3 +29,46 @@
   text-align: left; 
 }
 
+#output {
+  text-align: center; /* Centers inline and inline-block children */
+}
+
+#output img {
+  display: inline-block; 
+  margin: 0 auto; 
+}
+
+button {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Style for the regular lab button */
+#activate {
+  background-color: #4CAF50; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#activate:hover {
+  background-color: #45a049; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+#activate2 {
+  background-color: #ff0000; 
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#activate2:hover {
+  background-color: #E64A19; 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}

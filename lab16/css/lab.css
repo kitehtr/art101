@@ -6,36 +6,59 @@
 
 /* Left-aligned messages for auto-generated message */
 .text {
-  background-color: blueviolet;
+  background-color: #8a2be2; 
   color: white;
   border-radius: 15px;
-  padding: 5px 10px;
-  margin-right: 5px; 
-  display: inline-block; 
+  padding: 8px 16px;
+  margin-right: 8px;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-#input-output{
-  background-color: green;
+/* Styling for input-output container */
+#input-output {
+  background-color: #2e8b57; 
   color: white;
   border-radius: 15px;
-  padding: 10px 15px;
-  margin-right: 5px; 
-  display: inline-block; 
+  padding: 15px 20px;
+  margin-right: 10px;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
+/* Indentation style */
 .indent {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  margin-left: 50px; 
-  text-align: left; 
+  margin-left: 50px;
+  text-align: left;
+  font-size: 1rem;
 }
 
+/* Centering output content */
 #output {
-  text-align: center; /* Centers inline and inline-block children */
+  text-align: center;
+  margin-top: 20px;
 }
 
+/* Centering and styling the comic image */
 #output img {
   display: inline-block; 
   margin: 0 auto; 
 }
+
+#nav-buttons button {
+  background-color: #8c00ff; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
 
   
